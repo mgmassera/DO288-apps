@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.0
-COPY . /home/
+COPY . /
 RUN chgrp -R 0 /home/ && \
     chmod -R g=u /home/ 
 USER 1001
